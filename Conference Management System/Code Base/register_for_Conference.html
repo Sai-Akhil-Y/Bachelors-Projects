@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Attendee - Register For Conference</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+        <link href="../_static/master.css" rel="stylesheet" type="text/css">
+        <link href="../_static/subpage.css" rel="stylesheet" type="text/css">
+        <link href="../_static/examples.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.tagit.css" rel="stylesheet" type="text/css">
+        <link href="../css/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+        
+       
+        
+        
+        <script>
+          function validateform(){  
+  var name=document.myform.c_name.value;  
+   
+  if (name==null || name=="" ){  
+    alert("Name can't be blank");  
+    return false;  
+  }
+   
+}  
+           
+        </script>  
+        <style>
+          .hero1 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+          .hero1.is-info {
+    background-color: gray;
+    color: black;
+}
+.button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        </style>  
+    </head>
+
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+           
+          </nav>
+        
+          <section class="hero1 is-info">
+            <div class="hero-body">
+              <div class="container is-center">
+                <h1 class="title " style="color: black;">
+                  Register for new Conference
+                </h1>
+                <h2 class="subtitle" style="color:black;">
+                  To register for a new Conference, please fill your details.
+                </h2>
+              </div>
+            </div>
+          </section>
+        <div class="container">
+          <form name="myform" method="post" action="attendee_view-conferences.html" onsubmit="return validateform()">
+            <div class="field">
+                <label class="label">Conference Name</label>
+                <div class="control">
+                  <input class="input" name="c_name" pattern="[a-z]{0,}" type="text" placeholder="Event Name" >
+                </div>
+              </div>  
+              </div>
+              <div class="column">
+              
+                
+              
+            </div>
+              <div class="field">
+                
+                    <div class="field-body">
+                      
+                      
+                     
+                    </div> 
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+      
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                               
+                              </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                            <label class="label">Name</label>
+                      </div>
+                      <div class="field-body">
+                          <div class="field control has-icons-left">
+                            <input class="input" name="c_organizer_name" type="text" placeholder="Contact Name" required multiple>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Email</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" name="c_organizer_email" type="email" placeholder="Contact Email" multiple required>
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Phone</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field is-expanded">
+                            <div class="field has-addons">
+                              <p class="control">
+                                <a class="button is-static">
+                                  +91
+                                </a>
+                              </p>
+                              <p class="control is-expanded">
+                                <input class="input" name="c_organizer_phone" type="tel" pattern="[0-9]{10}" placeholder="Contact Number" required>
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+                   
+              </div>
+              
+                         
+              
+              <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                 
+                  
+                  <button type="submit" class="button">Register</button>
+                   
+                  
+                </p>
+              </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
