@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <title>Organizer Edit</title>
+  <style>
+            body {
+        background-image: url('https://wallpaperaccess.com/full/495111.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        
+    }
+    
+    .main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 650px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(255, 255, 255, 0.14);
+    }
+    
+    .sign {
+        padding-top: 40px;
+        color:black;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .un {
+    width: 75%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    form.form1 {
+        padding-top: 50px;
+    }
+    
+    .pass {
+            width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+   
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.5) ;
+        
+    }
+    
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #000000, #2D3436);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+    .forgot{
+        text-align: center;
+        color: black;
+        text-underline-offset: 0;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" >Organizer Edit</p>
+    <form class="form1" name="myform" action="#" method="post" onsubmit="return validate()" >
+      <input class="un "   name=name type="text" placeholder="Username">
+      <input class="un "   name=email type="email" placeholder="Email">
+      <input class="un "   name=company type="text" placeholder="Company">
+      <input class="un " type="tel" name="phone" placeholder="Phone" pattern="[0-9]{10}" title="Must Contain 10 digits" required>
+      <input class="pass"  name=password type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
+      <input class="pass"  name=passconf type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm Password">
+      <button class="submit" type="submit" >Confirm</button>
+            
+                
+    </div>
+     
+    <script>
+        function validate(){
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;
+    var passconf=document.myform.passconf.value;
+    var email=document.myform.email.value;
+    var comp=document.myform.email.value;  
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(email==""){  
+      alert("Email can't be blank");  
+      return false;  
+      }  
+      else if(comp==""){  
+      alert("Company can't be blank");  
+      return false;  
+      }  else if(password==""){  
+      alert("Password can't be blank");  
+      return false;  
+      }  
+      else if(passconf==""){  
+      alert("Password can't be blank");  
+      return false;  
+      } 
+      if (password!=passconf){
+        alert("Passwords do not match!");  
+      return false;
+      } 
+    }  
+    
+        
+    </script>
+</body>
+
+</html>

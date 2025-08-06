@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attendee's Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function() {
+        let cardToggles = document.getElementsByClassName('card-toggle');
+        for (let i = 0; i < cardToggles.length; i++) {
+          cardToggles[i].addEventListener('click', e => {
+            e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+          });
+        }
+      });
+    </script>
+    <style>
+      #as1{
+          width: 17%;
+      }
+
+      body{
+          margin: 0;
+      }
+      .main {
+        position: fixed;
+        border: black;
+        top: 3%; right: 10%;
+        bottom: 0; left: 20%;
+        width: 100%;
+        height: 100%;
+              }
+        #events{
+        padding:0px;
+        overflow:hidden;
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 22%;
+      }
+      .card+.card{
+      margin-top: 20px;
+    }
+    .main1 {
+    position: fixed;
+    border: black;
+    top: 3%;
+    right: 10%;
+    bottom: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+}
+.has-background-info {
+    background-image: url('210888.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    
+}
+.active{
+  background-color:rgb(189, 182, 169);
+  color: white;
+}
+
+  </style>
+  </head>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="" class="navbar-item">
+                Home
+           </a>
+            
+      
+            
+              
+            </a>
+      
+            
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <p id="ha"><b>Hello Attendee *-* &ensp;&ensp;   </b></p>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <aside id="as1" class="menu">
+       
+        <ul class="menu-list">
+          <li><a class="active">Conference Settings</a></li>
+          <li>
+            <ul>
+              <li><a>Register For Conference</a></li>
+              <li><a>Manage Conferences</a></li>
+              <li><a>Edit Profile</a></li>
+              
+            </ul>
+          </li>
+          <li><a>Report an Issue</a></li>
+          <li><a>LOGOUT</a></li>
+        </ul>
+        
+      </aside>
+
+<div class='main1 has-background-info' >
+<section class="section" id="events">
+  <h4 class="title has-text-centered" style="color:	SteelBlue;">Upcoming Conference details</h4>
+  <div class="container">
+    <div class="card is-fullwidth">
+      <header class="card-header">
+        <p class="card-header-title">Conference 1 - The 9th International Conference On Social Science And Humanity ICSSH 2020</p>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </header>
+      <div class="card-content is-hidden event_table">
+        <div class="content">
+          
+          
+            <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><abbr title="event_id">C_id</abbr></th>
+                      <th><abbr title="event_name">C_name</abbr></th>
+                      <th><abbr title="event_desc">Capacity</abbr></th>
+                      <th><abbr title="event_tags">Organisation</abbr></th>
+                      <th><abbr title="event_type_participation">Location</abbr></th>
+                      <th><abbr title="event_venue">Date</abbr></th>
+                      <th><abbr title="event_venue">Contact_number</abbr></th>
+                      <th><abbr title="event_max_participants">Email</abbr></th>
+                      
+                    </tr>
+                  </thead>
+                  
+                  <tbody> 
+                    <tr>
+                      <th>1</th>
+                      <td>The 9th International Conference On Social Science And Humanity ICSSH 2020)</td>
+                       <td>250</td>
+                      <td>ICSSH</td>
+                      
+                      <td>Tokyo, Japan (WLD140466)</td>
+                        <td>September 24, 2020</td>
+                      <td>123456789</td>
+                      <td>icssh@iedrc.org</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              
+        </div>
+      </div>
+    </div>
+    <div class="card is-fullwidth">
+      <header class="card-header">
+        <p class="card-header-title">Conference 2 - IASTEM - 913th International Conference On Recent Advances In Engineering And Technology ICRAET </p>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </header>
+      <div class="card-content is-hidden event_table">
+        <div class="content">
+          
+
+            <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><abbr title="event_id">C_id</abbr></th>
+                      <th><abbr title="event_name">C_name</abbr></th>
+                      <th><abbr title="event_desc">Capacity</abbr></th>
+                      <th><abbr title="event_tags">Organisation</abbr></th>
+                      <th><abbr title="event_type_participation">Location</abbr></th>
+                      <th><abbr title="event_venue">Date</abbr></th>
+                      <th><abbr title="event_venue">Contact_number</abbr></th>
+                      <th><abbr title="event_max_participants">Email</abbr></th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody> 
+                    <tr>
+                      <th>2</th>
+                      <td>IASTEM - 913th International Conference On Recent Advances In Engineering And Technology ICRAET</td>
+                       <td>300</td>
+                      <td>IASTEM</td>
+                      <td>Cambridge, United States of America
+                      </td>
+                        <td>January 20th, 2021</td>
+                      <td>5556668866</td>
+                      <td>info@iastem.org</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+  </body>
+</html>

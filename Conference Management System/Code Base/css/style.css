@@ -1,0 +1,570 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;   
+ }
+        
+.header{
+     background-color: black;
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 70px;
+     position:sticky;
+    
+    }
+.header a.logo{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: -50px;
+    border-top: 4px solid rgb(7, 10, 51);
+    color: #fff;
+     }
+.header a.logo span{
+    font-style: italic;
+    font-family: lobster;
+    color:rgb(7, 10, 51);
+    font-weight: bold;
+}
+.nav-area{
+    list-style: none;
+    }
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.nav-area li a{
+    transition: all .3s ease 0s;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-area li a:hover{
+    color: #006C87;
+}
+.btn-area {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: rgb(7, 10, 51);
+    text-decoration: none;   
+    border-radius:30px;  
+    border:1px solid #fff;     
+}
+.btn-area:hover{
+    background-color:rgb(32, 87, 85);
+    border:2px solid #fff;
+}
+
+.header-image{
+  background-image: url('images/b1.jpg');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  opacity: 0.5;
+  margin-top:-1px;
+}
+
+.ptext p{
+  position:absolute;
+  top:30%;
+  font-family: lobster;
+  right: 40px;
+  width:100%;
+  text-align:center;
+  color:rgb(8, 41, 23);
+  font-size:45px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.tag{
+  position:absolute;
+  top:60%;
+  right: 40px;
+  width:100%;
+  text-align:center;
+  color:rgb(0, 0, 0);
+  font-size:20px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  padding:20px;
+}
+
+.section-light{
+  background-color:rgb(205, 212, 212);
+  color:#000;
+  text-align: center;
+  margin-top:-20px;
+  height: 140px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.rsvp{
+   background-color: rgb(176, 12, 9);
+   border: 2px solid rgb(176, 12, 9);
+    font-size:30px;
+    color: #fff;
+}
+
+.section-banner{
+  background-color:rgb(247, 233, 237);
+  color:#000;
+  text-align: center;
+  margin-top:0px;
+  height: 400px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section-header{
+    background-color:rgb(212, 4, 60);
+    color:#000;
+    font-family: "Sofia";
+    height: 100px;
+    margin-top:-20px;
+    text-align: center;
+    color: #fff;
+}
+.flex-wrapper{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.speaker{
+  margin-top: 0px;
+  margin-left:0px;
+  margin-right:2px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.one{
+  background-image: url("images/speakers/shay-howe1.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+  display: block;
+}
+.overlay {
+  position: relative;
+  bottom: 0%;
+  left: 0;
+  right: 10px;
+  background-color:rgb(212, 4, 60);
+  overflow: hidden;
+  height:0;
+  transition: .5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.one:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+.mainsponsors:before{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.mainsponsors{
+  background-color:rgb(1, 1, 56);
+  color:#000;
+  position: sticky;
+  text-align: center;
+  overflow: hidden;
+  margin-top:0px;
+  height: 350px;
+  position: static;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.two{
+   background-image: url("images/speakers/b2.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 330px;
+}
+.two:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+  
+
+.three{
+   background-image: url("images/speakers/b1.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.three:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+  
+.four{
+   background-image: url("images/speakers/b4.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.four:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+  
+
+.flex-social{
+     display: flex;
+  flex-direction: column;
+}
+
+.flex-social > div {
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-sponsor {
+  display: flex;
+  justify-content: center;
+}
+.headerline{
+    margin-top: -70px;
+}
+.flex-sponsor  > div {
+  width: 100px;
+  margin-top:-150px;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 5px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.flex-sponsor > div.arena{
+    color:red;
+    font-style: italic;
+    margin-right:40px;
+    font-family: 'Georgia', serif;
+}
+.flex-sponsor > div.baby{
+    color:red;
+    font-style: italic;
+    margin-right:130px;
+    font-family: 'Georgia', serif;
+}
+.flex-sponsor > div.cyber{
+    color:red;
+    font-style: italic;
+    margin-right:40px;
+    font-family: 'Georgia', serif;
+}
+.flex-sponsor > div.chase{
+    color:red;
+    font-style: italic;
+    margin-right:40px;
+    font-family: 'Georgia', serif;
+}
+.section-spons{
+  background-color:rgb(1, 1, 56);
+  color:#fff;
+  font-family: "Sofia";
+  text-align: center;
+  margin-top:-20px;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#footer{
+  background-color:black;
+  margin-top: 0px;
+  height: 80px;
+  clear: both;
+  color: #efe5d0;
+  padding: 10px;
+  font-size: 90%;
+
+}
+
+#footer ul{
+  padding: 5px;
+  list-style-type: none;
+  margin-top:30px;
+  border-radius: 5px; 
+}
+
+
+#footer ul li{
+  display: inline;
+  float: right;
+}
+#footer ul li a{
+  text-decoration: none;
+  font-family:  Arial;
+  padding: .2em 1em;
+  color: #efe5d0;
+  
+}
+
+#footer ul li a:hover{
+  color:rgb(32, 87, 85);
+}
+
+
+.registration{
+    background-color: black;
+    height: 800px;
+    margin-top: -30px;
+}
+.registration form{
+    max-width:500px;
+    margin:auto;
+}
+.registration form h2{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+/*.registration form label{
+    color: #fff;
+    margin-left: 12px;
+}*/
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.registration .form1 label{
+  padding: 10px;
+  margin-left: -10px;
+  /*background: dodgerblue;*/
+  color: white;
+  min-width: 80px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  padding-left: 18px;
+  margin-right: 20px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+  background-color: #ddd;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(176, 12, 9);
+  border: 2px solid rgb(176, 12, 9);
+  padding: 16px 20px;
+  color: #fff;
+  margin-left: 245px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+.open-button {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  position: relative;
+  top: -50px;
+ /* margin:0 auto;*/
+  left:-420px;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 300px;
+ float: right;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  right: 350px;
+  top: -5px;
+  margin-right:79px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width:285px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 250px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn2:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.main-ticket{
+    background-color:slategray;
+    display: block;
+    height: 780px;
+    font-family: "lobster";
+
+}
+body > div.main-ticket > table{
+  border-collapse: collapse;
+  width: 80%;
+  color: black;
+  margin:0 auto;
+
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#minus{
+    color: red;
+    font-size:40px;
+    padding: 8px;
+    cursor: pointer;
+}
+#num{ 
+    color: red;
+    font-size:20px;
+    padding: 8px;
+    cursor: pointer;  
+}
+
+#plus{
+    color: red;
+    font-size:20px;
+    padding: 8px;
+    cursor: pointer;  
+
+}
+
+.checkout{
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  position: relative;
+  top: 250px;
+  margin:0 auto;
+  right:120px;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 300px;
+float: right;
+}
+
+
+.sideright{
+  /*background-color: #e5e4d7;*/
+  margin-left: 10px;
+  margin-right: 180px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 105%;
+  float: right;
+  width: 200px;
+  clear: right;
+  /*border:1px solid black;*/
+}
+.sideright img{
+  border-radius: 50%;
+  height:150px;
+  
+}
+.grid{
+ background-color:slategray;
+ margin-top: -10px;
+ margin-bottom: -10px;
+  font-family: Times New Roman, serif;
+}
+.main{
+  color: #fff;
+  margin-left: 120px;
+  margin-right: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 110%;
+  font-family: Times New Roman, serif;
+  background-color:black;
+
+  }

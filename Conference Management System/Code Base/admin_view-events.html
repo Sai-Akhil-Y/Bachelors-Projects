@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organizer Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function() {
+        let cardToggles = document.getElementsByClassName('card-toggle');
+        for (let i = 0; i < cardToggles.length; i++) {
+          cardToggles[i].addEventListener('click', e => {
+            e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+          });
+        }
+      });
+    </script>
+    <style>
+      #as1{
+          width: 17%;
+      }
+
+      body{
+          margin: 0;
+      }
+      .main {
+        position: fixed;
+        border: red;
+        top: 3%; right: 10%;
+        bottom: 0; left: 20%;
+        width: 100%;
+        height: 100%;
+              }
+        #events{
+        padding:0px;
+        overflow:hidden;
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 22%;
+      }
+      .card+.card{
+      margin-top: 20px;
+    }
+    .main1 {
+    position: fixed;
+    border: red;
+    top: 3%;
+    right: 10%;
+    bottom: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+}
+.has-background-info {
+    background-image: url('https://wallpaperaccess.com/full/894723.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    
+}
+.active{
+  background-color:rgb(189, 182, 169);
+  color: white;
+}
+
+  </style>
+  </head>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <!-- <img src="Fiesta.PNG" width="112" height="28"> -->
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="admin_view-events.html" class="navbar-item">
+                Home
+           </a>
+            <a class="navbar-item">
+              View Students
+            </a>
+      
+            <a class="navbar-item">
+              
+            </a>
+      
+            <!-- <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                    News
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div> -->
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <p id="ha"><b>Hello Organizer:) &ensp;&ensp;   </b></p>
+                <a id="ab1" class="button is-danger" href="index.html">
+                  <strong>LOG OUT</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <aside id="as1" class="menu">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a>Dashboard</a></li>
+          <li><a>Students</a></li>
+        </ul>
+        <p class="menu-label">
+          Administration
+        </p>
+        <ul class="menu-list">
+          <li><a class="active">Conference Settings</a></li>
+          <li>
+            <ul>
+              <li><a href="create_event.html">Add Conference</a></li>
+              <li><a href="">Upcoming Conference</a></li>
+              <li><a href="">Update Conference</a></li>
+            </ul>
+          </li>
+          <li><a>Student Issues</a></li>
+          <li><a>Update Profile</a></li>
+        </ul>
+        
+      </aside>
+
+<div class='main1 has-background-info' >
+<section class="section" id="events">
+  <h4 class="title has-text-centered" style="color:white;">Conference details</h4>
+  <div class="container">
+    <div class="card is-fullwidth">
+      <header class="card-header">
+        <p class="card-header-title">Conference 1 - World Conference on Applied Science, Engineering and Technology (WCASET)</p>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </header>
+      <div class="card-content is-hidden event_table">
+        <div class="content">
+          
+          
+            <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><abbr title="c_id">C_id</abbr></th>
+                      <th><abbr title="c_name">C_name</abbr></th>
+                      <th><abbr title="Capacity">Capacity</abbr></th>
+                      <th><abbr title="Organisation">Organisation</abbr></th>
+                      <th><abbr title="Location">Location</abbr></th>
+                      <th><abbr title="data">Date</abbr></th>
+                      <th><abbr title="Contact_number">Contact_number</abbr></th>
+                      <th><abbr title="Email">Email</abbr></th>
+                      
+                    </tr>
+                  </thead>
+                  
+                  <tbody> 
+                    <tr>
+                      <th>1</th>
+                      <td>World Conference on Applied Science, Engineering and Technology (WCASET)</td>
+                       <td>200</td>
+                      <td>WCASET</td>
+                      
+                      <td>Royal Albert Hall
+                        London,Europe</td>
+                        <td>June 1st, 2021</td>
+                      <td>8886668866</td>
+                      <td>worldconference.wcaset@gmail.com</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              
+        </div>
+      </div>
+    </div>
+    <div class="card is-fullwidth">
+      <header class="card-header">
+        <p class="card-header-title">Conference 2 - International Conference on Image and Graphics Processing (ICIGP)</p>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </header>
+      <div class="card-content is-hidden event_table">
+        <div class="content">
+          
+
+            <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><abbr title="c_id">C_id</abbr></th>
+                      <th><abbr title="c_name">C_name</abbr></th>
+                      <th><abbr title="Capacity">Capacity</abbr></th>
+                      <th><abbr title="Organisation">Organisation</abbr></th>
+                      <th><abbr title="Location">Location</abbr></th>
+                      <th><abbr title="data">Date</abbr></th>
+                      <th><abbr title="Contact_number">Contact_number</abbr></th>
+                      <th><abbr title="Email">Email</abbr></th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody> 
+                    <tr>
+                      <th>2</th>
+                      <td>International Conference on Image and Graphics Processing (ICIGP)</td>
+                       <td>250</td>
+                      <td>ICIGP</td>
+                      <td>Main City all
+                        Sanya,China</td>
+                        <td>August 1st, 2021</td>
+                      <td>5556668866</td>
+                      <td>Internationalconference.icigp@gmail.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+  </body>
+</html>

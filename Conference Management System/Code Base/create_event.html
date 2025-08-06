@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Organizer - Create New Conference</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+        <link href="../_static/master.css" rel="stylesheet" type="text/css">
+        <link href="../_static/subpage.css" rel="stylesheet" type="text/css">
+        <link href="../_static/examples.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.tagit.css" rel="stylesheet" type="text/css">
+        <link href="../css/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+        
+       
+        
+        
+        <script>
+          function validateform(){  
+  var name=document.myform.c_name.value;  
+   var venue=document.myform.venue.value; 
+   
+  if (name==null || name=="" ){  
+    alert("Name can't be blank");  
+    return false;  
+  }
+  else if (venue==null || venue=="" ){  
+    alert("Venue Name can't be blank");  
+    return false;  
+  }
+   
+}  
+           
+        </script>  
+        <style>
+          .hero1 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+          .hero1.is-info {
+    background-color: black;
+    color: #fff;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        </style>  
+    </head>
+
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+           
+          </nav>
+        
+          <section class="hero1 is-info">
+            <div class="hero-body">
+              <div class="container is-center">
+                <h1 class="title " style="color: white;">
+                  Create New Conference
+                </h1>
+                <h2 class="subtitle" style="color: white;">
+                  To create a new Conference, fill all the required inputs
+                </h2>
+              </div>
+            </div>
+          </section>
+        <div class="container">
+          <form name="myform" method="post" action="admin_view-events.html" onsubmit="return validateform()">
+            <div class="field">
+                <label class="label">Conference Name</label>
+                <div class="control">
+                  <input class="input" name="c_name" pattern="[a-z]{0,}" type="text" placeholder="Event Name" >
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Conference Description</label>
+                <div class="control">
+                  <textarea class="textarea" name="c_desc" placeholder="Description" required></textarea>
+                </div>
+              </div>
+                  
+                  <div class="column">
+                    <label class="label">Date of Conference</label>
+                    <input class="input" name="date" type="datetime-local" id="start_date_time" required>                    
+                  </div>
+                 
+                  
+
+              <div class="columns">
+                  <div class="column">
+                    <label class="label">Venue of Conference</label>
+                    <input class="input" name="venue" type="text" placeholder="Venue" >
+                  </div>
+                  
+                  <div class="column">
+                    <label class="label">Max. No. of Participants</label>
+                    <input class="input" name="c_max_participants" type="number" placeholder="Number of participants" required>
+                  </div>
+                  
+                  <div class="column">
+                    <label class="label">Registration Link</label>
+                    <input class="input" name="c_registration_link" type="url" placeholder="Enter URL here" required>
+                  </div>
+              </div>
+              <div class="column">
+              
+                <label class="label">Organizer</label>
+                <input class="input" name="o_name" type="text" placeholder="Venue" required>
+              
+            </div>
+              <div class="field">
+                
+                    <div class="field-body">
+                      
+                      
+                     
+                    </div> 
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+      
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                               
+                              </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                            <label class="label">Organizer Name</label>
+                      </div>
+                      <div class="field-body">
+                          <div class="field control has-icons-left">
+                            <input class="input" name="c_organizer_name" type="text" placeholder="Contact Name" required multiple>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Organizer Email</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                              <input class="input" name="c_organizer_email" type="email" placeholder="Contact Email" multiple required>
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Organizer Phone</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field is-expanded">
+                            <div class="field has-addons">
+                              <p class="control">
+                                <a class="button is-static">
+                                  +91
+                                </a>
+                              </p>
+                              <p class="control is-expanded">
+                                <input class="input" name="c_organizer_phone" type="tel" pattern="[0-9]{10}" placeholder="Contact Number" required>
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+                   
+              </div>
+              
+              <div class="field">
+                  <label class="label">Upload Poster</label>
+                  <div class="file has-name">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="event_organizer_poster">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          Choose a file…
+                        </span>
+                      </span>
+                      <span class="file-name">
+                        Filename
+                      </span>
+                    </label>
+                  </div>
+              </div>            
+              
+              <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                 
+                  
+                  <button type="submit" class="button">Register</button>
+                   
+                  
+                </p>
+              </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
